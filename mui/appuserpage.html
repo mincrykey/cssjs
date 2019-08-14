@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+        <link rel="stylesheet" href="./css/mui.min.css">
+        <link rel="stylesheet" href="./css/mui.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="./css/app.css"/>
+		<style>
+			.title{
+				margin: 20px 15px 7px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="title">
+				会员中心
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="https://www.vikacg.com/user#posts/all">
+						我的文章
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="https://www.vikacg.com/user#comments">
+						我的评论
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="https://www.vikacg.com/user#info">
+						个人资料
+					</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="https://www.vikacg.com/user#password">
+                        修改密码
+                    </a>
+                </li>
+            </ul>
+            <div class="title">
+                维咔相关
+            </div>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" onclick="shantui()">
+                        安装防闪退
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="https://app.vikacg.com/#contact">
+                            关注我们
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="https://jq.qq.com/?_wv=1027&k=5kq0cEa">
+                            Beta反馈
+                    </a>
+                </li>
+            </ul>
+            <div class="title">
+                   协议条款
+            </div>
+            <ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="https://www.vikacg.com/agreement">
+						用户协议
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="https://www.vikacg.com/agreement/privacy">
+						隐私政策
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="https://www.vikacg.com/agreement/disclaimer">
+						免责声明
+					</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="https://www.vikacg.com/agreement/copyright">
+                        知识产权声明
+                    </a>
+                </li>
+            </ul>
+			<div class="title">
+                    关于
+            </div>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="https://support.vikacg.com/">
+                            帮助中心
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" onclick="sharevika()">
+                            分享给好友
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="./update.html?v=1" >
+                            检查更新(当前1.0.0)
+                    </a>
+                </li>
+            </ul>
+            <p style="text-align: center">Copyright © 2015-2019 Vikosu Inc.<br>Vikasu不保证该应用在使用者所在地是完全合法的</p>
+            <a href="https://www.vikacg.com/wp-login.php?action=logout&redirect_to=https%3A%2F%2Fwww.vikacg.com&_wpnonce=6ce2938b00">
+                <button type="button" class="mui-btn mui-btn-danger mui-btn-block">清除登录信息</button>
+            </a>        
+        </div>
+	</body>
+    <script src="./js/mui.min.js"></script>
+    <script>
+        function sharevika() {
+            var person = prompt("请复制下面的内容发送给好友", "给你推荐一个二次元资源app：维咔VikACG，里面的东西你懂得，如果链接打不开请使用浏览器：https://app.vikacg.com");
+            }
+        function shantui(){
+            var urlStr = encodeURI("https://app.vikacg.com/shantui.html")
+            plus.runtime.openURL(urlStr);
+        }
+    </script>
+</html>
